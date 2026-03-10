@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body { padding-top: 100px; /* Adjust based on combined height of top-bar + header */ }
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TOP BAR */
+.top-bar {
+    position: fixed;        /* Fix at top */
+    top: 0;                 /* Stick to very top */
+    left: 0;
+    width: 100%;            /* Full width */
+    background: #eee;
+    padding: 8px 0;
+    font-size: 14px;
+    z-index: 1000;          /* Ensure it stays above content */
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: #ff4d4f;
+    margin-left: 15px;
+}
+
+/* HEADER */
+.main-header {
+    position: fixed;        /* Fix below top bar */
+    top: 20px;              /* Push down by top-bar height */
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 15px 0;
+    z-index: 999;           /* Slightly lower than top-bar */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Nice subtle shadow */
+}
+
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    width: 50%;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    width: 20%;
+    border: none;
+    background: #ff4d4f;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.header-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+}
+
+.header-links img {
+    height: 18px;
+    margin-right: 5px;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+
+/* ================= TRUST SECTION ================= */
+
+/* .trust-section {
+    background: #ffffff;
+    padding: 60px 40px;
+}
+
+.trust-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.trust-card {
+    flex: 1;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.trust-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.trust-card img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.trust-card h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #222;
+}
+
+.trust-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.products-section {
+    padding: 30px;
+    background: #f9f9f9;
+}
+
+.products-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.products-section {
+    padding: 30px;
+    background: #fff;
+}
+
+.products-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #333;
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #f68b1e;
+}
+
+.product-card .discount {
+    color: #e60023;
+    font-size: 0.9em;
+} */
